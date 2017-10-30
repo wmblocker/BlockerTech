@@ -1,0 +1,98 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UserSecretsId>aspnet-BlockerTech-89a33b84-03a0-4694-8e15-97aca642241f</UserSecretsId>
+    <RepositoryUrl></RepositoryUrl>
+    <Product>Blocker Technologies Website</Product>
+    <Description />
+    <Authors>William Blocker</Authors>
+    <Company>Blocker Technologies</Company>
+    <ApplicationInsightsResourceId>/subscriptions/b2141160-1fcd-4286-aa37-adb200ab32ab/resourcegroups/BlockerTech/providers/microsoft.insights/components/blockertech</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/b2141160-1fcd-4286-aa37-adb200ab32ab/resourcegroups/BlockerTech/providers/microsoft.insights/components/blockertech</ApplicationInsightsAnnotationResourceId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\blockertech - Web Deploy.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\images\Adobe\AdobeStock_100000042.jpeg" />
+    <Content Include="wwwroot\images\Adobe\AdobeStock_108019109.jpeg" />
+    <Content Include="wwwroot\images\Adobe\AdobeStock_87899286.jpeg" />
+    <Content Include="wwwroot\images\Adobe\Phone Detective@1x.png" />
+    <Content Include="wwwroot\images\Logo\cordova.png" />
+    <Content Include="wwwroot\images\Logo\FacebookBox.svg" />
+    <Content Include="wwwroot\images\Logo\Google.svg" />
+    <Content Include="wwwroot\images\Logo\Logo%400.5x.png" />
+    <Content Include="wwwroot\images\Logo\Logo%400.75x.png" />
+    <Content Include="wwwroot\images\Logo\MicrosoftSquares.svg" />
+    <Content Include="wwwroot\images\Solutions\android-original.svg" />
+    <Content Include="wwwroot\images\Solutions\apple-original.svg" />
+    <Content Include="wwwroot\images\Solutions\bootstrap-plain.svg" />
+    <Content Include="wwwroot\images\Solutions\csharp-original.svg" />
+    <Content Include="wwwroot\images\Solutions\dot-net-original-wordmark.svg" />
+    <Content Include="wwwroot\images\Solutions\HeRO.png" />
+    <Content Include="wwwroot\images\Solutions\html5-original-wordmark.svg" />
+    <Content Include="wwwroot\images\Solutions\java-original-wordmark.svg" />
+    <Content Include="wwwroot\images\Solutions\javascript-original.svg" />
+    <Content Include="wwwroot\images\Solutions\jquery-original-wordmark.svg" />
+    <Content Include="wwwroot\images\Solutions\nodejs-original.svg" />
+    <Content Include="wwwroot\images\Solutions\rails-original-wordmark.svg" />
+    <Content Include="wwwroot\images\Solutions\typescript-original.svg" />
+    <Content Include="wwwroot\images\WideWLogo\WideWithLogo%400.5x.png" />
+    <Content Include="wwwroot\images\WideWLogo\WideWithLogo%400.75x.png" />
+    <Content Include="wwwroot\images\WideWLogo\WideWithLogo%402x.png" />
+    <Content Include="wwwroot\images\WideWLogo\WideWithLogo%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Azure.KeyVault" Version="2.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="1.1.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.13.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="SendGrid" Version="9.1.0" />
+    <PackageReference Include="SendGrid.NetCore" Version="1.0.0-rtm-00002" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0-msbuild3-final" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0-msbuild3-final" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
